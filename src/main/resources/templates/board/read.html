@@ -42,7 +42,11 @@
   <button type="button" class="btn btn-primary">수정</button>
 </a>
 
-<a href="/board/list">
+[[${page}]]
+
+<!-- 페이지 번호 파라미터 추가 -->
+<!-- /board/list?page=3 -->
+<a th:href="@{/board/list( page = ${page} )}">
   <button type="button" class="btn btn-info">목록으로</button>
 </a>
 
